@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/white"
+    android:padding="2dp">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/green"
+        android:layout_marginBottom="1dp">
+        <TextView
+            android:id="@+id/caption"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="something"
+            android:background="#2bdaae"
+            android:gravity="center"
+            android:textAllCaps="true"
+            android:padding="@dimen/small_padding" />
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="vertical"
+            android:background="#218f79"
+            android:padding="2dp"
+            android:layout_marginRight="1dp">
+            <TextView
+                android:id="@+id/length_1rl"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:text="Length 1"
+                android:padding="@dimen/small_padding"
+                android:textSize="18sp"
+                android:background="#2bdaae"
+                android:layout_marginBottom="1dp"/>
+
+            <TextView
+                android:id="@+id/length_2rl"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:text="Length 1"
+                android:padding="@dimen/small_padding"
+                android:textSize="18sp"
+                android:background="#2bdaae"
+                android:layout_marginBottom="1dp"/>
+            <TextView
+                android:id="@+id/width_1rl"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:text="Width 1"
+                android:padding="@dimen/small_padding"
+                android:textSize="18sp"
+                android:background="#2bdaae"
+                android:layout_marginBottom="1dp"/>
+            <TextView
+                android:id="@+id/width_2rl"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:text="Width 2"
+                android:padding="@dimen/small_padding"
+                android:textSize="18sp"
+                android:background="#2bdaae"
+                android:layout_marginBottom="1dp"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:orientation="vertical"
+            android:padding="@dimen/small_padding"
+            android:background="#218f79">
+            <TextView
+                android:id="@+id/area"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:text="Area"
+                android:padding="@dimen/small_padding"
+                android:textSize="18sp"
+                android:background="#2bdaae"
+                android:layout_marginBottom="1dp"/>
+
+            <TextView
+                android:id="@+id/desim"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:text="Desim"
+                android:padding="@dimen/small_padding"
+                android:textSize="18sp"
+                android:background="#2bdaae"
+                android:layout_marginBottom="1dp"/>
+            <TextView
+                android:id="@+id/gonda"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:text="Gonda"
+                android:padding="@dimen/small_padding"
+                android:textSize="18sp"
+                android:background="#2bdaae"
+                android:layout_marginBottom="1dp"/>
+        </LinearLayout>
+
+
+    </LinearLayout>
+</LinearLayout>
