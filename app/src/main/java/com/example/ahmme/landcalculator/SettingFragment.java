@@ -38,6 +38,7 @@ public class SettingFragment extends Fragment {
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
         View view= inflater.inflate(R.layout.fragment_setting, container, false);
+        getActivity().setTitle(R.string.settings);
         desimUnitET= (EditText) view.findViewById(R.id.desim_unit);
         gondaUnitEt= (EditText) view.findViewById(R.id.gonda_unit);
         saveUnitBtn=(Button) view.findViewById(R.id.save_units);
@@ -95,7 +96,8 @@ public class SettingFragment extends Fragment {
                         })
                         .setNegativeButton(android.R.string.no, new DialogInterface.OnClickListener() {
                             public void onClick(DialogInterface dialog, int which) {
-                                // do nothing
+                                InputMethodManager imm = (InputMethodManager) getActivity().getSystemService(Context.INPUT_METHOD_SERVICE);
+                                imm.hideSoftInputFromWindow(getActivity().getWindow().getCurrentFocus().getWindowToken(), 0);
                             }
                         })
                         .setIcon(android.R.drawable.ic_dialog_alert)

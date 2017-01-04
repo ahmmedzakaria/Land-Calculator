@@ -3,22 +3,22 @@
     android:orientation="vertical"
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
-    android:background="@color/white"
-    android:padding="2dp">
+    android:background="@color/green"
+    android:padding="@dimen/padding_small">
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:background="@color/green"
-        android:layout_marginBottom="1dp">
+        android:layout_marginBottom="@dimen/margin_very_small">
         <TextView
             android:id="@+id/caption"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="something"
-            android:background="#2bdaae"
+            android:textColor="@color/white"
+            android:background="@color/colorPrimaryDark"
             android:gravity="center"
             android:textAllCaps="true"
-            android:padding="@dimen/small_padding" />
+            android:padding="@dimen/padding_small" />
 
     </LinearLayout>
 
@@ -32,50 +32,55 @@
             android:layout_height="wrap_content"
             android:layout_weight="1"
             android:orientation="vertical"
-            android:background="#218f79"
-            android:padding="2dp"
-            android:layout_marginRight="1dp">
+            android:background="@color/white"
+            android:paddingRight="@dimen/padding_very_small"
+            android:paddingLeft="@dimen/padding_very_small"
+            android:paddingTop="@dimen/padding_very_small"
+            android:layout_marginRight="@dimen/margin_very_small">
             <TextView
                 android:id="@+id/length_1rl"
                 android:layout_width="match_parent"
+                android:textColor="@color/white"
                 android:layout_height="0dp"
                 android:layout_weight="1"
                 android:text="Length 1"
-                android:padding="@dimen/small_padding"
+                android:padding="@dimen/padding_small"
                 android:textSize="18sp"
-                android:background="#2bdaae"
-                android:layout_marginBottom="1dp"/>
+                android:background="@color/colorPrimaryDark"
+                android:layout_marginBottom="@dimen/margin_very_small"/>
 
             <TextView
                 android:id="@+id/length_2rl"
                 android:layout_width="match_parent"
+                android:textColor="@color/white"
                 android:layout_height="0dp"
                 android:layout_weight="1"
                 android:text="Length 1"
-                android:padding="@dimen/small_padding"
+                android:padding="@dimen/padding_small"
                 android:textSize="18sp"
-                android:background="#2bdaae"
-                android:layout_marginBottom="1dp"/>
+                android:background="@color/colorPrimaryDark"
+                android:layout_marginBottom="@dimen/margin_very_small"/>
             <TextView
                 android:id="@+id/width_1rl"
                 android:layout_width="match_parent"
+                android:textColor="@color/white"
                 android:layout_height="0dp"
                 android:layout_weight="1"
-                android:text="Width 1"
-                android:padding="@dimen/small_padding"
+
+                android:padding="@dimen/padding_small"
                 android:textSize="18sp"
-                android:background="#2bdaae"
-                android:layout_marginBottom="1dp"/>
+                android:background="@color/colorPrimaryDark"
+                android:layout_marginBottom="@dimen/margin_very_small"/>
             <TextView
                 android:id="@+id/width_2rl"
                 android:layout_width="match_parent"
+                android:textColor="@color/white"
                 android:layout_height="0dp"
                 android:layout_weight="1"
-                android:text="Width 2"
-                android:padding="@dimen/small_padding"
+                android:padding="@dimen/padding_small"
                 android:textSize="18sp"
-                android:background="#2bdaae"
-                android:layout_marginBottom="1dp"/>
+                android:background="@color/colorPrimaryDark"
+                android:layout_marginBottom="@dimen/margin_very_small"/>
         </LinearLayout>
 
         <LinearLayout
@@ -83,39 +88,44 @@
             android:layout_height="match_parent"
             android:layout_weight="1"
             android:orientation="vertical"
-            android:padding="@dimen/small_padding"
-            android:background="#218f79">
+            android:paddingRight="@dimen/padding_very_small"
+            android:paddingLeft="@dimen/padding_very_small"
+            android:paddingTop="@dimen/padding_very_small"
+            android:background="@color/white">
             <TextView
                 android:id="@+id/area"
                 android:layout_width="match_parent"
+                android:textColor="@color/white"
                 android:layout_height="0dp"
                 android:layout_weight="1"
                 android:text="Area"
-                android:padding="@dimen/small_padding"
+                android:padding="@dimen/padding_small"
                 android:textSize="18sp"
-                android:background="#2bdaae"
-                android:layout_marginBottom="1dp"/>
+                android:background="@color/colorPrimaryDark"
+                android:layout_marginBottom="@dimen/margin_very_small"/>
 
             <TextView
                 android:id="@+id/desim"
                 android:layout_width="match_parent"
+                android:textColor="@color/white"
                 android:layout_height="0dp"
                 android:layout_weight="1"
                 android:text="Desim"
-                android:padding="@dimen/small_padding"
+                android:padding="@dimen/padding_small"
                 android:textSize="18sp"
-                android:background="#2bdaae"
-                android:layout_marginBottom="1dp"/>
+                android:background="@color/colorPrimaryDark"
+                android:layout_marginBottom="@dimen/margin_very_small"/>
             <TextView
                 android:id="@+id/gonda"
                 android:layout_width="match_parent"
+                android:textColor="@color/white"
                 android:layout_height="0dp"
                 android:layout_weight="1"
                 android:text="Gonda"
-                android:padding="@dimen/small_padding"
+                android:padding="@dimen/padding_small"
                 android:textSize="18sp"
-                android:background="#2bdaae"
-                android:layout_marginBottom="1dp"/>
+                android:background="@color/colorPrimaryDark"
+                android:layout_marginBottom="@dimen/margin_very_small"/>
         </LinearLayout>
 
 

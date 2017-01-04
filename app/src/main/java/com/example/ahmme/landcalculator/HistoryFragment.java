@@ -37,6 +37,7 @@ public class HistoryFragment extends Fragment {
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
        View view=inflater.inflate(R.layout.fragment_history, container, false);
+        getActivity().setTitle(R.string.history);
         manager=new LandlInfoManager(getActivity());
         listView=(ListView)view.findViewById(R.id.list_view);
         clearHistryBtn=(Button)view.findViewById(R.id.clea_history);

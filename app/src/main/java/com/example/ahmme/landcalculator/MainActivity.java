@@ -1,11 +1,15 @@
 package com.example.ahmme.landcalculator;
 
+import android.app.ActionBar;
+import android.app.Activity;
 import android.content.Context;
 import android.content.SharedPreferences;
+import android.os.Build;
 import android.os.Bundle;
 import android.app.Fragment;
 import android.app.FragmentManager;
 import android.app.FragmentTransaction;
+import android.support.annotation.RequiresApi;
 import android.support.design.widget.NavigationView;
 import android.support.v4.view.GravityCompat;
 import android.support.v4.widget.DrawerLayout;
@@ -30,11 +34,13 @@ public class MainActivity extends AppCompatActivity
     Toolbar toolbar=null;
     LandInfo landInfo;
 
+    @RequiresApi(api = Build.VERSION_CODES.N)
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
         landInfo=new LandInfo();
+        landInfo.setContext(this);
 
         currentFragment=new QuadrangleFragmet();
         manager=getFragmentManager();
@@ -65,20 +71,11 @@ public class MainActivity extends AppCompatActivity
         }
     }
 
-  /*  @Override
-    public boolean onCreateOptionsMenu(Menu menu) {
-        getMenuInflater().inflate(R.menu.main, menu);
-        return true;
-    }*/
 
     @Override
     public boolean onOptionsItemSelected(MenuItem item) {
-        int id = item.getItemId();
 
-        //noinspection SimplifiableIfStatement
-        if (id == R.id.action_settings) {
-            return true;
-        }
+
 
         return super.onOptionsItemSelected(item);
     }
@@ -102,8 +99,6 @@ public class MainActivity extends AppCompatActivity
 
         } else if (id == R.id.setting) {
             currentFragment=new SettingFragment();
-        } else if (id == R.id.nav_send) {
-
         }
 
         transaction=manager.beginTransaction();
@@ -118,5 +113,16 @@ public class MainActivity extends AppCompatActivity
     public void softKey(){
         InputMethodManager imm = (InputMethodManager) MainActivity.this.getSystemService(Context.INPUT_METHOD_SERVICE);
         imm.hideSoftInputFromWindow(MainActivity.this.getWindow().getCurrentFocus().getWindowToken(), 0);
+    }
+
+    @RequiresApi(api = Build.VERSION_CODES.N)
+    public void basicInitialization() {
+        InputMethodManager imm = (InputMethodManager) getSystemService(Context.INPUT_METHOD_SERVICE);
+        imm.hideSoftInputFromWindow(getWindow().getCurrentFocus().getWindowToken(), 0);
+
+        landInfo.setContext(this);
+        landInfo.sharedPreferences=getSharedPreferences(landInfo.LAND_CALCULATOR,Context.MODE_PRIVATE);
+        landInfo.editor=landInfo.sharedPreferences.edit();
+        landInfo.editor.commit();
     }
 }

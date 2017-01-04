@@ -6,7 +6,7 @@
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:background="@color/green"
+        android:background="@color/colorPrimaryDark"
         android:orientation="vertical"
         android:weightSum="10"
         tools:context="com.example.ahmme.messmanager.AboutActivity">
@@ -16,7 +16,7 @@
             android:layout_weight="4"
             android:layout_gravity="center"
             android:orientation="horizontal">
-
+            
             <LinearLayout
                 android:layout_width="0dp"
                 android:layout_height="match_parent"
@@ -27,56 +27,56 @@
                     android:layout_width="match_parent"
                     android:layout_height="0dp"
                     android:layout_weight="1.2"
-                    android:text="Developer :"
-                    android:layout_marginLeft="70dp"
-                    android:textSize="@dimen/sp20"
-                    android:padding="5dp"
+                    android:text="@string/developer"
+                    android:layout_marginLeft="@dimen/margin_big_70_dp"
+                    android:textSize="@dimen/text_size_common"
+                    android:padding="@dimen/padding_midum"
                     android:textColor="#ffffff"/>
 
                 <TextView
                     android:layout_width="match_parent"
                     android:layout_height="0dp"
                     android:layout_weight="1"
-                    android:textSize="@dimen/sp18"
-                    android:text="Name: Zakaria Ahmmed"
-                    android:padding="5dp"
-                    android:layout_marginLeft="100dp"
+                    android:textSize="@dimen/text_size_midum"
+                    android:text="@string/name_zakaria_ahmmed"
+                    android:padding="@dimen/padding_midum"
+                    android:layout_marginLeft="@dimen/big_margin_100dp"
                     android:textColor="#ffffff"/>
                 <TextView
                     android:layout_width="match_parent"
                     android:layout_height="0dp"
                     android:layout_weight="1"
-                    android:textSize="@dimen/sp18"
-                    android:text="College: Govt. Titumir College"
-                    android:padding="5dp"
-                    android:layout_marginLeft="100dp"
+                    android:textSize="@dimen/text_size_midum"
+                    android:text="@string/college_govt_titumir_college"
+                    android:padding="@dimen/padding_midum"
+                    android:layout_marginLeft="@dimen/big_margin_100dp"
                     android:textColor="#ffffff"/>
                 <TextView
                     android:layout_width="match_parent"
                     android:layout_height="0dp"
                     android:layout_weight="1"
-                    android:textSize="@dimen/sp18"
-                    android:text="Subject: Mathematics"
-                    android:padding="5dp"
-                    android:layout_marginLeft="100dp"
+                    android:textSize="@dimen/text_size_midum"
+                    android:text="@string/subject_mathematics"
+                    android:padding="@dimen/padding_midum"
+                    android:layout_marginLeft="@dimen/big_margin_100dp"
                     android:textColor="#ffffff"/>
                 <TextView
                     android:layout_width="match_parent"
                     android:layout_height="0dp"
                     android:layout_weight="1"
-                    android:textSize="@dimen/sp18"
-                    android:text="Master's (Final Year)"
-                    android:padding="5dp"
-                    android:layout_marginLeft="100dp"
+                    android:textSize="@dimen/text_size_midum"
+                    android:text="@string/master_s_final_year"
+                    android:padding="@dimen/padding_midum"
+                    android:layout_marginLeft="@dimen/big_margin_100dp"
                     android:textColor="#ffffff"/>
                 <TextView
                     android:layout_width="match_parent"
                     android:layout_height="0dp"
                     android:layout_weight="1"
-                    android:textSize="14dp"
-                    android:text="Email: ahmmedzakaria@gmail.com"
-                    android:padding="5dp"
-                    android:layout_marginLeft="100dp"
+                    android:textSize="@dimen/text_size_small"
+                    android:text="@string/email_ahmmedzakaria_gmail_com"
+                    android:padding="@dimen/padding_midum"
+                    android:layout_marginLeft="@dimen/big_margin_100dp"
                     android:textColor="#ffffff"/>
             </LinearLayout>
         </LinearLayout>

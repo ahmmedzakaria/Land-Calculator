@@ -4,28 +4,19 @@
     <group android:checkableBehavior="single">
         <item
             android:id="@+id/quadrangle"
-            android:title="Quadrangel Area" />
+            android:title="@string/quadrangle_area" />
         <item
             android:id="@+id/triangle"
-            android:title="Triangle" />
+            android:title="@string/triangel_area" />
         <item
             android:id="@+id/history"
-            android:title="History" />
+            android:title="@string/history" />
         <item
             android:id="@+id/about"
-            android:title="About" />
+            android:title="@string/about" />
+        <item
+            android:id="@+id/setting"
+            android:title="@string/settings" />
     </group>
-
-    <item android:title="Communicate">
-        <menu>
-            <item
-                android:id="@+id/setting"
-                android:title="Setting" />
-            <item
-                android:id="@+id/nav_send"
-                android:icon="@drawable/ic_menu_send"
-                android:title="Send" />
-        </menu>
-    </item>
 
 </menu>

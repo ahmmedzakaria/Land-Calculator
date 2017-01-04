@@ -105,15 +105,6 @@ public class LandlInfoManager {
         return contact;
     }
 
-    public int getTotalMessMember() {
-        this.open();
-        Cursor cursor = database.query(DataBaseHelper.TABLE_LAND_INFO, new String[]{DataBaseHelper.COL_ID},
-                null, null, null, null, null);
-        cursor.moveToLast();
-        int columId = cursor.getInt(cursor.getColumnIndex(DataBaseHelper.COL_ID));
-        this.close();
-        return columId;
-    }
 
 
 

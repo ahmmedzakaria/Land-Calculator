@@ -4,8 +4,8 @@
         <shape>
             <gradient
                 android:angle="90"
-                android:endColor="#000050"
-                android:startColor="#0f7678" />
+                android:endColor="#005003"
+                android:startColor="#16780f" />
             <padding
                 android:bottom="10dp"
                 android:left="10dp"
@@ -18,7 +18,7 @@
         <shape>
             <gradient
                 android:angle="270"
-                android:endColor="#500000"
+                android:endColor="#002350"
                 android:startColor="#000000" />
 
             <padding
@@ -33,8 +33,8 @@
         <shape>
             <gradient
                 android:angle="270"
-                android:endColor="#0291cf"
-                android:startColor="#0d4f60" />
+                android:endColor="#02cf7a"
+                android:startColor="#0d6035" />
 
             <padding
                 android:bottom="10dp"

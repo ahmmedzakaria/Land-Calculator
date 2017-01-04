@@ -8,17 +8,15 @@
         android:id="@+id/activity_calculation_history"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:background="#8fefe7"
+        android:background="@color/colorPrimaryDark"
         android:orientation="vertical"
-        android:padding="5dp"
-
         tools:context="com.example.ahmme.landcalculator.CalculationHistory">
 
         <ListView
             android:id="@+id/list_view"
             android:layout_width="match_parent"
             android:layout_height="0dp"
-            android:layout_weight="10">
+            android:layout_weight="9">
 
         </ListView>
         <Button
@@ -26,10 +24,10 @@
             android:onClick="clearHistory"
             android:layout_width="match_parent"
             android:layout_height="0dp"
-            android:layout_weight="1"
+            android:layout_weight="1.5"
             android:text="Clear History"
             android:layout_gravity="bottom"
-            android:textSize="@dimen/text_size"
+            android:textSize="@dimen/text_size_big"
             android:background="@drawable/custom_button"
             android:textColor="@drawable/text_color"
             android:layout_marginRight="1dp" />
